@@ -3,3 +3,4 @@
 -- Add any additional options here
 vim.opt.relativenumber = false -- Relative line numbers
 vim.g.autochdir = true
+vim.opt.scrolloff = 10
