@@ -4,3 +4,7 @@
 vim.opt.relativenumber = false -- Relative line numbers
 vim.g.autochdir = true
 vim.opt.scrolloff = 10
+vim.opt.title = true
+vim.opt.titlestring = "%F"
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
