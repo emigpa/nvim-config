@@ -4,7 +4,7 @@ return {
     {
       "LazyVim/LazyVim",
       opts = {
-        colorscheme = "kanagawa-paper",
+        colorscheme = "rose-pine",
       },
     },
   },
@@ -14,4 +14,5 @@ return {
     priority = 1000,
     opts = {},
   },
+  { "rose-pine/neovim", name = "rose-pine" },
 }
