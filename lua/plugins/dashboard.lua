@@ -4,17 +4,18 @@ return {
     opts = {
       dashboard = {
         sections = {
-          { section = "header" },
+          { pane = 1, section = "header" },
           { section = "keys", gap = 1, padding = 1 },
-          { section = "startup" },
+          { pane = 1, section = "startup" },
           {
             section = "terminal",
-            cmd = "pokemon-colorscripts -r; sleep .1",
+            cmd = "pokemon-colorscripts -n dragapult --no-title; sleep .1",
             random = 10,
             pane = 2,
-            indent = 4,
-            height = 30,
+            indent = 2,
+            height = 24,
           },
+          { pane = 2, icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
         },
       },
     },
