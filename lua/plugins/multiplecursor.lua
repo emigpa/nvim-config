@@ -20,7 +20,8 @@ return {
     },
 
     {
-      "<Leader>d",
+      -- "<Leader>d",
+      "<M-d>",
       "<Cmd>MultipleCursorsAddJumpNextMatch<CR>",
       mode = { "n", "x" },
       desc = "Add cursor and jump to next cword",
