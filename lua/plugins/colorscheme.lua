@@ -31,6 +31,12 @@ return {
           rose = "#ebbcba",
           pine = "#437e91",
           no_bg = "#000000",
+          highlight_low = "#21202e",
+          highlight_med = "#403d52",
+          highlight_high = "#524f67",
+          surface = "#000000",
+          overlay = "#26233a",
+          subtle = "#908caa",
         },
       },
       highlight_groups = {
