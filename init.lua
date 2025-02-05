@@ -4,4 +4,3 @@ vim.cmd(":Copilot disable")
 vim.o.termguicolors = true
 vim.opt.textwidth = 120
 vim.opt.wrap = true
-vim.opt.clipboard = "unnamedplus"
