@@ -25,4 +25,15 @@ return {
       },
     },
   },
+  {
+    "nvim-neotest/neotest",
+    dependencies = {
+      "matrosmartz/neotest-deno",
+    },
+    opts = {
+      adapters = {
+        ["neotest-deno"] = {},
+      },
+    },
+  },
 }
