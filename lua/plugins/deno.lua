@@ -25,15 +25,33 @@ return {
       },
     },
   },
-  {
-    "nvim-neotest/neotest",
-    dependencies = {
-      "matrosmartz/neotest-deno",
-    },
-    opts = {
-      adapters = {
-        ["neotest-deno"] = {},
-      },
-    },
-  },
+  -- {
+  --   "nvim-neotest/neotest",
+  --   dependencies = {
+  --     "matrosmartz/neotest-deno",
+  --   },
+  --   config = function()
+  --     require("neotest").setup({
+  --       adapters = {
+  --         require("neotest-deno")({
+  --           get_additional_filter_dir = { "node_modules" },
+  --           allow = { "-A" },
+  --           root_files = { "jsr.json", "jsr.jsonc" },
+  --           dap_adapter = "pwa-node",
+  --         }),
+  --       },
+  --     })
+  --   end,
+  -- },
+  -- {
+  --   "nvim-neotest/neotest",
+  --   dependencies = {
+  --     "matrosmartz/neotest-deno",
+  --   },
+  --   opts = {
+  --     adapters = {
+  --       ["neotest-deno"] = {},
+  --     },
+  --   },
+  -- },
 }
