@@ -8,9 +8,9 @@ return {
       setup = {
         volar = function()
           require("lazyvim.util").lsp.on_attach(function(client)
-            -- if client.name == "volar" then
-            --   client.server_capabilities.documentFormattingProvider = false
-            -- end
+            if client.name == "volar" then
+              client.server_capabilities.documentFormattingProvider = false
+            end
             local function checkIfESLintExists()
               -- List of possible ESLint config files
               local eslintConfigFiles =
