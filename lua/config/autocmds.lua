@@ -6,3 +6,13 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+---@diagnostic disable: undefined-global vim
+
+vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
+  desc = "Make file buffers disposable by default",
+  callback = function()
+    if vim.bo.buftype == "" and vim.fn.expand("%") ~= "" then
+      vim.bo.bufhidden = "wipe"
+    end
+  end,
+})
