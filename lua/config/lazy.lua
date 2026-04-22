@@ -30,6 +30,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.git" },
     { import = "lazyvim.plugins.extras.lang.go" },
     { import = "lazyvim.plugins.extras.lang.svelte" },
+    { import = "lazyvim.plugins.extras.lang.rust" },
     { import = "lazyvim.plugins.extras.ai.copilot" },
     { import = "lazyvim.plugins.extras.ai.copilot-chat" },
     { import = "lazyvim.plugins.extras.util.project" },
