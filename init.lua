@@ -6,3 +6,4 @@ vim.opt.wrap = true
 vim.opt.mouse = ""
 vim.opt.spell = false
 vim.opt.spelllang = { "es", "en" } -- Uses Spanish and English
+vim.g.markdown_folding = 1

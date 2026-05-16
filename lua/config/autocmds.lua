@@ -10,7 +10,7 @@
 vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
   desc = "Make file buffers disposable by default",
   callback = function()
-    if vim.bo.buftype == "" and vim.fn.expand("%") ~= "" then
+    if vim.bo.filetype ~= "markdown" and vim.bo.buftype == "" and vim.fn.expand("%") ~= "" then
       vim.bo.bufhidden = "wipe"
     end
   end,
